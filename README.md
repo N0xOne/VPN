@@ -56,6 +56,11 @@ Une fois la configuration en place, j'ai juste a utiliser systemd pour activer l
 systemctl start openvpn@server
 ```
 
+pour creer un utilisateur on utilisera simplement la commande suivante:
+```
+sudo useradd -s /bin/false -d /dev/null -g <user> <user>
+```
+
 Pour verifier que les parametres et le fonctionnement du serveur est correct, il faut augmenter la verbosite du serveur.
 Et verifier les logs, du demarrage du serveur jusqu'a qu'une connexion soit etabli avec un client.
 
