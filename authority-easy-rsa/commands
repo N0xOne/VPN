@@ -1,0 +1,26 @@
+./easyrsa init-pki
+./easyrsa build-ca
+./easyrsa gen-req "Internal VPN" nopass
+./easyrsa sign-req server "Internal VPN"
+./easyrsa gen-req client1
+./easyrsa sign-req client client1
+./easyrsa gen-req client2
+./easyrsa sign-req client client2
+./easyrsa gen-crl
+
+
+cp ~/pki/ca.crt ~/projet/.
+cp ~/pki/crl.pem ~/projet/.
+mkdir -p ~/projet/servers/vpn
+cp ~/pki/issued/Internal\ VPN.crt ~/projet/servers/vpn/.
+cp ~/pki/private/Internal\ VPN.key ~/projet/servers/vpn/.
+mkdir -p ~/projet/clients/vpn
+cp ~/pki/issued/client1.crt ~/projet/clients/vpn/.
+cp ~/pki/private/client1.key ~/projet/clients/vpn/.
+cp ~/pki/issued/client2.crt ~/projet/clients/vpn/.
+cp ~/pki/private/client2.key ~/projet/clients/vpn/.
+
+cd $HOME
+tar cvf authority-vpn.tar projet/
+
+# Puis envoie du fichier a l'aide de scp (depuis la CA -> Serveur; uniquement)

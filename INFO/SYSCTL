@@ -1,0 +1,2 @@
+Activez la redirection IPv4 avec la regle ci-dessous:
+net.ipv4.ip_forward=1

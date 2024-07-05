@@ -1,0 +1,57 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            e2:f1:e6:cb:94:71:8a:96:de:62:52:e8:36:1d:eb:12
+        Signature Algorithm: ED25519
+        Issuer: C=FR, ST=Bouches-du-Rhone, L=Marseille, O=Nox Corporation, OU=DISP, CN=Certification Authority/emailAddress=security@nox-corp.net
+        Validity
+            Not Before: Jul  5 12:29:45 2024 GMT
+            Not After : Oct  8 12:29:45 2026 GMT
+        Subject: C=FR, ST=Bouches-du-Rhone, L=Marseille, O=Nox Corporation, OU=DISP, CN=client2/emailAddress=security@nox-corp.net
+        Subject Public Key Info:
+            Public Key Algorithm: ED25519
+                ED25519 Public-Key:
+                pub:
+                    60:57:ed:59:cb:0c:81:70:a9:77:c3:d2:21:e7:1d:
+                    02:c1:06:4b:6a:09:88:a0:94:25:74:7b:80:84:33:
+                    52:3c
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                0B:30:F0:EA:96:52:1E:0E:E8:ED:7F:9E:F0:61:65:52:F3:31:2E:F1
+            X509v3 Authority Key Identifier: 
+                keyid:3C:FC:8E:15:45:CA:5A:34:CB:A6:72:14:D8:AE:51:E0:A7:1F:B7:47
+                DirName:/C=FR/ST=Bouches-du-Rhone/L=Marseille/O=Nox Corporation/OU=DISP/CN=Certification Authority/emailAddress=security@nox-corp.net
+                serial:47:C5:A5:78:A6:E1:AD:AE:F3:5F:2A:A1:16:87:D7:77:B3:05:3C:58
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ED25519
+    Signature Value:
+        a4:ef:25:f7:2e:64:52:17:bc:22:04:42:d3:34:6d:17:6d:9c:
+        40:8c:55:84:24:81:82:a3:5a:91:c6:17:ac:11:d8:dd:e0:ce:
+        f5:e9:1c:c5:c5:5d:dd:d8:a4:30:ef:6c:6b:82:b2:bf:0b:93:
+        76:9a:79:d3:b8:6d:c4:27:75:06
+-----BEGIN CERTIFICATE-----
+MIIDTTCCAv+gAwIBAgIRAOLx5suUcYqW3mJS6DYd6xIwBQYDK2VwMIGtMQswCQYD
+VQQGEwJGUjEZMBcGA1UECAwQQm91Y2hlcy1kdS1SaG9uZTESMBAGA1UEBwwJTWFy
+c2VpbGxlMRgwFgYDVQQKDA9Ob3ggQ29ycG9yYXRpb24xDTALBgNVBAsMBERJU1Ax
+IDAeBgNVBAMMF0NlcnRpZmljYXRpb24gQXV0aG9yaXR5MSQwIgYJKoZIhvcNAQkB
+FhVzZWN1cml0eUBub3gtY29ycC5uZXQwHhcNMjQwNzA1MTIyOTQ1WhcNMjYxMDA4
+MTIyOTQ1WjCBnTELMAkGA1UEBhMCRlIxGTAXBgNVBAgMEEJvdWNoZXMtZHUtUmhv
+bmUxEjAQBgNVBAcMCU1hcnNlaWxsZTEYMBYGA1UECgwPTm94IENvcnBvcmF0aW9u
+MQ0wCwYDVQQLDARESVNQMRAwDgYDVQQDDAdjbGllbnQyMSQwIgYJKoZIhvcNAQkB
+FhVzZWN1cml0eUBub3gtY29ycC5uZXQwKjAFBgMrZXADIQBgV+1ZywyBcKl3w9Ih
+5x0CwQZLagmIoJQldHuAhDNSPKOCAUAwggE8MAkGA1UdEwQCMAAwHQYDVR0OBBYE
+FAsw8OqWUh4O6O1/nvBhZVLzMS7xMIHtBgNVHSMEgeUwgeKAFDz8jhVFylo0y6Zy
+FNiuUeCnH7dHoYGzpIGwMIGtMQswCQYDVQQGEwJGUjEZMBcGA1UECAwQQm91Y2hl
+cy1kdS1SaG9uZTESMBAGA1UEBwwJTWFyc2VpbGxlMRgwFgYDVQQKDA9Ob3ggQ29y
+cG9yYXRpb24xDTALBgNVBAsMBERJU1AxIDAeBgNVBAMMF0NlcnRpZmljYXRpb24g
+QXV0aG9yaXR5MSQwIgYJKoZIhvcNAQkBFhVzZWN1cml0eUBub3gtY29ycC5uZXSC
+FEfFpXim4a2u818qoRaH13ezBTxYMBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1Ud
+DwQEAwIHgDAFBgMrZXADQQCk7yX3LmRSF7wiBELTNG0XbZxAjFWEJIGCo1qRxhes
+Edjd4M716RzFxV3d2KQw72xrgrK/C5N2mnnTuG3EJ3UG
+-----END CERTIFICATE-----

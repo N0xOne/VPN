@@ -1,0 +1,6 @@
+auth    optional   pam_faildelay.so  delay=3000000
+auth    [success=1 default=ignore]      pam_unix.so nullok_secure
+auth    requisite                       pam_deny.so
+auth    required                        pam_permit.so
+auth	requisite /usr/lib/x86_64-linux-gnu/security/pam_google_authenticator.so secret=/etc/openvpn/gauth/${USER} user=gauth authtok_prompt=pin
+account required  pam_permit.so
