@@ -59,6 +59,7 @@ systemctl start openvpn@server
 pour creer un utilisateur on utilisera simplement la commande suivante:
 ```
 sudo useradd -s /bin/false -d /dev/null -g <user> <user>
+# dans le cas present <user> deviens client1 ou client2
 ```
 
 Pour verifier que les parametres et le fonctionnement du serveur est correct, il faut augmenter la verbosite du serveur.
@@ -79,4 +80,4 @@ Pour la MFA avec google authenticator, on utilisera cette commande pour generer 
 su -c "google-authenticator -t -d -r3 -R30 -f -W -e5 -l 'VPN ${USER}' -s /etc/openvpn/gauth/${USER}" gauth
 ```
 
-La commande est inclus dans le scripte de generation du fichier .ovpn, il faudra donc ajouter le prefix sudo, si l'ont souhaite le faire manuellement
+La commande est inclus dans le script de generation du fichier .ovpn, il faudra donc ajouter le prefix sudo, si l'ont souhaite le faire manuellement
