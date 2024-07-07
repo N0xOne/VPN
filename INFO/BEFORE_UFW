@@ -11,9 +11,8 @@ Veuillez editer le fichier comme ceci:
 # START OPENVPN RULES
 # NAT table rules
 *nat
-:POSTROUTING ACCEPT [0:0] 
-# Allow traffic from OpenVPN client to <interface>
--A POSTROUTING -s <network/subnet> -o <interface> -j MASQUERADE
+:POSTROUTING ACCEPT [0:0]
+-A POSTROUTING -s 10.8.0.0/24 -o enp0s8 -j MASQUERADE
 COMMIT
 # END OPENVPN RULES
 
